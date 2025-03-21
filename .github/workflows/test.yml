@@ -9,9 +9,17 @@ on:
       - "main"
 
 jobs:
-  validate:
+  tokenlist-validation:
+    name: Tokenlist Validation
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v4 
+
       - name: Run validations
-        run: ./.github/workflows/validate.sh
+        run: |
+          ./.github/workflows/validate.sh
+
+      - name: Report Status
+        if: always()
+        run: echo "Validation completed"
