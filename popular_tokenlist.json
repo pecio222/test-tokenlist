@@ -926,5 +926,13 @@
     "decimals": 9,
     "chainId": 1399811149,
     "tags": []
-  }
+  },
+    {
+    "name": "testok",
+    "symbol": "testok",
+    "address": "0x5b82028cfc477c4e7dda7ff33d59a23fa7be002a",
+    "decimals": 18,
+    "chainId": 80094,
+    "tags": []
+  },
 ]
